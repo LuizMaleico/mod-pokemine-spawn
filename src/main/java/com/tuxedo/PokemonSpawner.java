@@ -1,4 +1,4 @@
-package net.fabricmc.pokemonspawner;
+package com.tuxedo;
 
 import com.mojang.logging.LogUtils;
 import net.fabricmc.api.ModInitializer;
@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
-public class PokemonSpawnerMod implements ModInitializer {
+public class PokemonSpawner implements ModInitializer {
 
     private static final Logger LOGGER = LogUtils.getLogger();
     private static final Map<String, Biome.Category> POKEMON_BIOME_MAP = new HashMap<>();
@@ -99,6 +99,8 @@ public class PokemonSpawnerMod implements ModInitializer {
     @Override
     public void onInitialize() {
         LOGGER.info("Pokemon Spawner Mod initialized!");
+
+
     }
 
     public static void trySpawnPokemon(ServerWorld world, BlockPos playerPos) {

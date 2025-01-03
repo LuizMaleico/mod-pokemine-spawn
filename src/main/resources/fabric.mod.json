@@ -2,10 +2,12 @@
 	"schemaVersion": 1,
 	"id": "modid",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Poke$pawner",
+	"description": "",
 	"authors": [
-		"Me!"
+		"Twiins",
+		"Dark Tangent",
+		"by Tuxedo"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -16,10 +18,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.tuxedo.PokemonSpawner"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.tuxedo.ExampleModClient"
 		]
 	},
 	"mixins": [
@@ -31,8 +33,8 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.16.9",
-		"minecraft": "~1.21.4",
-		"java": ">=21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
 		"fabric-api": "*"
 	},
 	"suggests": {
